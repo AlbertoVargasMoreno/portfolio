@@ -1,3 +1,3 @@
 console.log("hi");
-// looks like i'm workin in a new branch
-// would you notice the changes?
+const body = document.getElementsByName("body");
+const myName = document.getElementById("myName");

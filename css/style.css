@@ -17,5 +17,6 @@ section#skills {
     text-transform: capitalize;
 }
 section#skills ul.skills-list {
+    text-align: left;
     list-style: none;
 }
