@@ -1,0 +1,21 @@
+.hero {
+    background-color: #000;
+    height: 100vh;
+    text-align: center;
+}
+.hero h1 {
+    color: #CFCF00;
+    font-size: 70px;
+}
+.hero p {
+    color: #DDD;
+    font-size: 26px;
+}
+section#skills {
+    height: 100vh;
+    text-align: center;
+    text-transform: capitalize;
+}
+section#skills ul.skills-list {
+    list-style: none;
+}
