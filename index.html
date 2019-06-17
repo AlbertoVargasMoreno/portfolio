@@ -5,39 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>betoPortfolio</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Fontawesome -->
-    <!-- Google Fonts -->
+    <!-- <link rel="stylesheet" href="css/cover.css"> -->
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
-<body>
+<body style="background-color: black">
 
-    <!-- <div class="hero">
-        <h1 id="myName" class="">Alberto Vargas</h1>
-        <p>Front-end Developer</p>
-    </div> -->
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div id="#home" class="text-center cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead">
+            <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
         <main class="inner cover">
             <h1 class="cover-heading">Alberto Vargas Moreno</h1>
+            <p class="lead">
+                I'm just starting in this world of the web development, currently I have front-end skills but still
+                struggling with it.
+            </p>
+            <p class="lead">
+                <a href="#" class="btn btn-lg btn-secondary">See more</a>
+            </p>
         </main>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
     </div>
 
-    <section id="skills">
-        <h2>these are my skills</h2>
-        <ul class="skills-list">
-            <li>Persistent and proactive</li>
-            <li>Self taught</li>
-            <li>Organization skills</li>
-        </ul>
+    <section id="features">
+        <div class="card-deck my-3">
+            <div class="card">
+                <img src="assets/images/html5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/css3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/bootstrap4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/javascript.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/jquery.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/git.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-none">Card title</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col btn-success">github</div>
+                <div class="col btn-warning">e-mail</div>
+                <div class="col btn-success">cellphone</div>
+                <div class="col btn-warning">cv</div>
+            </div>
+        </div>
     </section>
 
     <!-- Main javasript file -->
