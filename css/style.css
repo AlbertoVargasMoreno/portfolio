@@ -59,6 +59,23 @@ header.masthead a.nav-link:hover {
 }
 
 /* fin */
+
+/* skills section
+--------------------------------------------------------------*/
+#skills img {
+    background-color: white;
+}
+/* fin */
+
+/* skills section
+--------------------------------------------------------------*/
+#contact img {
+    height: 50px;
+    background-color: white;
+}
+/* fin */
+
+
 /* About Us Section
 --------------------------------*/
 
