@@ -1,3 +1,19 @@
+html::-webkit-scrollbar {
+    width: 10px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  /* border-radius: 25px; */
+}
+html {
+    scrollbar-color: #4e4e4e black;
+}
+
 section {
     padding-top: 48px;
 }
@@ -63,15 +79,19 @@ header.masthead a.nav-link:hover {
 
 /* skills section
 --------------------------------------------------------------*/
+section#skills {
+    padding-top: 20px;
+}
+
 @media (min-width: 0768px) {
 section#skills {
     height: 100vh;
 }
 }
 
-#skills img {
+/* #skills img {
     background-color: white;
-}
+} */
 
 .skills-card {
     /* box-shadow: 0 0 35px rgba(0, 0, 0, 0.1); */
@@ -140,22 +160,50 @@ section#projects {
 
 /* contact section
 --------------------------------------------------------------*/
-section#contact {
+section#contact-0 {
     height: 100vh;
     padding-top: 26vh;
 }
 
-#contact div.container {
+#contact-0 div.container {
     text-align: center;
+}
+@media (min-width: 0768px) {
+    .my-5.row {
+        padding-left: 09rem;
+        padding-right: 09rem;
+    }
 }
 
 #contact .row {
     text-align: center;
 }
+
 #contact img {
     height: 50px;
     background-color: white;
 }
+
+section.contact-0 a svg {
+    fill: tomato;
+    height: 50px;
+    transform: scale(1);
+}
+
+section.contact-0 a svg path {
+    fill: tomato;
+}
+
+section.contact-0 a svg:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease-out 0.00s;
+}
+
+section.contact-0 a svg:hover path {
+    fill: yellowgreen;
+}
+
+
 /* fin */
 
 main.inner.over {
