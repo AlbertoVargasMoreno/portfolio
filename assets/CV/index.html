@@ -8,156 +8,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style type = "text/css">
-    	@media screen {
-		p.bodyText {font-family:verdana, arial, sans-serif;}
-	}
-
-	@media screen, print {
-		p.bodyText {
-		font-size:10pt
-		}
-	}
-
-    #presentacion {
-        background-color: #7c243c; color: #ffffff; padding: 30px;
-    }
-    h1 { font-weight: 100;}
-    h3 { font-weight: 100;}
-
-    table#contacto {
-	    table-layout: fixed;
-	    padding: 30px;
-        padding-top: 1em;
-        padding-bottom: 0px;
-	}
-    table#contacto td {
-        border-bottom: 1em solid #0000;
-    }
-    table#contacto td a {
-        text-decoration: none;
-        color: inherit;
-    }
-        	
-    div#cuerpo {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-    }
-
-	th {
-		text-transform: uppercase;
-        text-align: left;
-		color:#c4a464;
-        text-decoration: underline solid 3px;
-	}
-
-    ul {
-        padding-inline-start: 0;
-        margin-block-start: 0;
-    }
-
-	li {
-	    list-style-type: none;
-	} 
-
-    div#cuerpo table#conocimientos {
-        text-align: justify;
-    }
-
-    .description-text {
-        color: gray;
-    }
-
-    table#conocimientos .small-info {
-	    color: gray;
-	    font-size:x-small;
-	}
-
-    .small-info a {
-        color: #c4a464;
-    }
-
-	#softSkills td, #techSkills td {
-        text-align: center;
-        background-color: #c4a464;
-        color: #ffffff;
-        border-radius: 5px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-transform: capitalize;
-	}
-    #softSkills td.hide, #techSkills td.hide {
-        background-color: #0000;
-    }
-
-    table#languages {
-        table-layout: fixed;
-    }
-
-	@media (max-width:570px) {
-	    table#contacto td {
-			display: flex;
-	    }
-        div#cuerpo {
-            padding-left: 00px;
-            padding-right: 00px;
-            padding-top: 00px;
+        body {
+            margin: 0;
+            width: 100%;
         }
-	}
 
-	@media (min-width:760px) {
-		#cuerpo {
-			display: flex;
-	    }
-	    #cuerpo table {
-			flex: 1;
-            margin-left: 5px;
-            margin-right: 5px;
-	    }
-	}
+        #presentacion {
+            background-color: #7c243c; color: #ffffff; padding: 30px;
+        }
+        #presentacion > h1, h3 { 
+            font-weight: 100;
+            margin: 0;
+        }
+        #presentacion > h3 {
+            color: #c4a464;
+        }
+        #presentacion > p {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
 
-	/* print style */
-	@media print {
-		body {
-		    padding: 0!important;
-		    margin: 0!important;
-		}     
-		p.bodyText {
-			font-family:georgia, times, serif;
-			}
-		#cuerpo {
-		    display: flex;
-		}
-		#cuerpo table {
-		    flex: 1;
-            margin-left: 5px;
-            margin-right: 5px;
-		}
-	}
-	@page { size: auto;  margin: 0mm; }
+        table#contacto {
+            table-layout: fixed;
+            padding: 30px;
+            padding-top: 1em;
+            padding-bottom: 0px;
+            background-color:#641c34;
+            color: #ffffff;
+        }
+        table#contacto td {
+            border-bottom: 1em solid #0000;
+        }
+        table#contacto td a {
+            text-decoration: none;
+            color: inherit;
+        }
+                
+        div#cuerpo {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
 
-     </style>
+        th {
+            text-transform: uppercase;
+            text-align: left;
+            color:#c4a464;
+            text-decoration: underline solid 3px;
+        }
 
-    <title>alberto_vargas_v0</title>
+        ul {
+            padding-inline-start: 0;
+            margin-block-start: 0;
+        }
+        li {
+            list-style-type: none;
+        } 
+
+        div#cuerpo > table#conocimientos {
+            text-align: justify;
+        }
+        .description-text {
+            color: gray;
+        }
+        table#conocimientos .small-info {
+            color: gray;
+            font-size:x-small;
+        }
+        .small-info a {
+            color: #c4a464;
+        }
+
+        #softSkills td, #techSkills td {
+            text-align: center;
+            background-color: #c4a464;
+            color: #ffffff;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-transform: capitalize;
+        }
+        #softSkills td.hide, #techSkills td.hide {
+            background-color: #0000;
+        }
+
+        table#languages {
+            table-layout: fixed;
+        }
+
+        /* para pantallas angostas: apilar celdas de #contacto, eliminar relleno en #cuerpo */
+        @media (max-width:570px) {
+            table#contacto td {
+                display: flex;
+            }
+            div#cuerpo {
+                padding-left: 00px;
+                padding-right: 00px;
+                padding-top: 00px;
+            }
+        }
+        
+        /* en pantallas anchas: poner tablas lado a lado */
+        @media (min-width:760px) {
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        /* printing style */
+        @media print {
+            body {
+                padding: 0!important;
+                margin: 0!important;
+            }     
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        @page { size: auto;  margin: 0mm; }
+
+    </style>
+
+    <title>alberto_vargas_v1</title>
 
 </head>
 
 <body
-    style="margin: 0; width: 100%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
 
     <div id="encabezado">
 
         <div id="presentacion" >
-            <h1 style="margin: 0;">Alberto Vargas Moreno</h1>
-            <h3 style="color: #c4a464; margin: 0;">Ingeniero en Comunicaciones y Electrónica</h2>
-                <p style=" margin-top: 16px; margin-bottom: 0;">
+            <h1>Alberto Vargas Moreno</h1>
+            <h3>Ingeniero en Comunicaciones y Electrónica</h3>
+                <p>
                     Busco un rol desafiante que me permita utilizar Habilidades técnicas a favor del crecimiento de la
                     organización. Tengo interés en mejorar mi conocimiento sobre tendencias nuevas y emergentes en el
                     campo de la tecnología.
                 </p>
         </div>
 
-        <table id="contacto" bgcolor="#641c34" width="100%" style="color: white;" cellspacing="" >
+        <table id="contacto" width="100%" cellspacing="" >
             <tr>
                 <td><a href="mailto:vargasmorenoalberto@gmail.com">vargasmorenoalberto@gmail.com</a></td>
                 <td>+52 776 106 5101</td>
@@ -234,7 +235,7 @@
 
         <br>
 
-        <table id="skillsTable" width="100%" border="0px">
+        <table id="skillsTable" width="100%">
             <thead>
                 <th>
                     Habilidades
@@ -262,8 +263,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <table id="languages" cellpadding="10px" cellspacing="0px" width="100%"
-                            border="0px">
+                        <table id="languages" cellpadding="10px" cellspacing="0px" width="100%">
                             <thead>
                                 <th colspan="2"><i>Idiomas</i></th>
                             </thead>
@@ -278,7 +278,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <table id="techSkills" cellpadding="6px" cellspacing="08" width="100%" border="0px">
+                        <table id="techSkills" cellpadding="6px" cellspacing="08" width="100%">
                             <thead>
                                 <tr>
                                     <th colspan="4"><i>Técnicas</i></th>
