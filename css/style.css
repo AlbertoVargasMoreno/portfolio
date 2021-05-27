@@ -65,6 +65,10 @@ header.masthead a.nav-link:hover {
     text-align: center;
 }
 
+p.hero-content {
+    max-width: 55rem;
+}
+
 #hero img {
     max-width: 95%;
     max-height: 85%;
@@ -182,6 +186,13 @@ section#contact-0 {
 #contact img {
     height: 50px;
     background-color: white;
+}
+
+/* esto podria funcionar o no, pero es una idea para que se mantenga centrado y sin ocupar toda pantalla */
+.row.my-5 {
+    max-width: 43em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.contact-0 a svg {
