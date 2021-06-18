@@ -41,8 +41,11 @@
             border-bottom: 1em solid #0000;
         }
         table#contacto td a {
-            /* text-decoration: none; */
+            text-decoration: none;
             color: inherit;
+        }
+        a:hover {
+            font-style: italic;
         }
                 
         div#cuerpo {
@@ -55,7 +58,7 @@
             text-transform: uppercase;
             text-align: left;
             color:#c4a464;
-            text-decoration: underline solid 3px;
+            /* text-decoration: underline solid 3px; */
         }
 
         ul {
@@ -70,13 +73,15 @@
             text-align: justify;
         }
         .description-text {
-            color: gray;
+            /* color: gray; */
+            font-size: 0.95em;
         }
         table#conocimientos .small-info {
             color: gray;
             font-size:x-small;
         }
-        .small-info a {
+        #conocimientos > tbody > tr:nth-child(2) > td > ul > li:nth-child(9) > em > a
+        {
             color: #c4a464;
         }
 
@@ -95,6 +100,10 @@
 
         table#languages {
             table-layout: fixed;
+        }
+        #languages > tbody > tr > td:nth-child(2) > a {
+            text-decoration: none;
+            color: inherit;
         }
 
         /* para pantallas angostas: apilar celdas de #contacto, eliminar relleno en #cuerpo */
@@ -153,9 +162,9 @@
             <h1>Alberto Vargas Moreno</h1>
             <h3>Ingeniero en Comunicaciones y Electrónica</h3>
                 <p>
-                    Busco un rol desafiante que me permita utilizar Habilidades técnicas a favor del crecimiento de la
-                    organización. Tengo interés en mejorar mi conocimiento sobre tendencias nuevas y emergentes en el
-                    campo de la tecnología.
+                    Aspiro en convertirme en desarrollador full-stack. Disfruto de un gran rango de temas relacionados con las TI, pero mi principal enfoque está en el desarrollo web. No tengo experiencia previa, ni certificaciones. 
+Tengo bases de conocimiento en control, automatización y electrónica. Busco un trabajo en el área de desarrollo web, tengo disponibilidad para trabajar en el área metropolitana o vía remota.
+
                 </p>
         </div>
 
@@ -165,8 +174,8 @@
                 <td><a href="tel:+527761065101">+52 776 106 5101</a></td>
             </tr>
             <tr>
-                <td>Cerro Gordo Rural, Mex CP 55510</td>
-                <td>AV 11, Tepeolulco</td>
+                <td>Zona Metropolitana del Valle de México</td>
+                <td></td>
             </tr>
         </table>
 
@@ -177,19 +186,21 @@
         <table id="conocimientos" cellpadding="0" cellspacing="5" width="100%" >
 
             <tr>
-                <th>Experiencia</th>
+                <th>Proyectos</th>
             </tr>
             <tr>
                 <td>
                     <ul>
-                        <li><b>Desarrollo Front End</b></li>
-                        <li>Página web: <span class="description-text">Desarrolle la página estática de este estudio de diseño y sofware código</span></li>
-                        <li class="small-info">Tacode, 2019. ref:<a href="mailto:pablo@gmail.com">Pablo Castellanos</a></li>
+                        <li><b>Página Web: Invernadero</b></li>
+                        <li class="description-text">Es un sitio personalizado basado en Bootstrap. Fue diseñado para ser usado por un Invernadero que busca crear su presencia en línea.</li>
+                        <li class="description-text">El próposito de este sitio web es mostrar la oferta de productos que tienen, así que use un diesño despejado y totalmente responsivo</li>
                         <li><br></li>
-                        <li><b>Servicio Social</b></li>
-                        <li>Control automático de un Sistema de temperatura y humedad: <span class="description-text">Trabajar en este proyecto implico tomar decisiones sobre la construcción, hacer propuestas de diseño en el software y el hardware, realizar simulaciones, desarrollar el código fuente, y los circuitos electronicos.</span> </li>
-                        <li> Adquisición de datos e instrumentación:<span class="description-text"> Proyecto enfocado en la transmisión de una variable de proceso, utilizando el estándar RS-485. A partir de un termopar, se realizo la adecuación de la señal y a través de una red de microcontroladores se envío el dato.</span>  </li>
-                        <li class="small-info">ESIMEZ. ref:<a href="mailto:valverde@cinvestav.mx">Erasmo Valverde</a></li>
+                        <li><b>Página Web: Sastretría</b></li>
+                        <li class="description-text">Esta página web fue construida con el enfoque en la simplicidad, usabilidad y fucionamiento sobre la estética; teniendo como prioridad la velocidad, incluso en equipos viejos.</li>
+                        <li class="description-text">El reto fue intentar mantenerlo lo más ligero posible, agregando funcionalidades importantes para los visitantes</li>
+                        <li><br></li>
+                        <li><b>Desarrollo de firmware: Control de Fase en Corriente Alterna</b> | <em>Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> </li>
+                        <li class="description-text">Enfocado para un sistema de control automático de temperatura, el desarrollo implico el uso de microcontroladores MSP430 y pruebas con circuitos de potencia. El código fue desarrollado en C.</li></li>
                     </ul>
                 </td>
             </tr>
@@ -201,7 +212,10 @@
                 <td>
                     <ul>
                         <li>Linux Essentials</li>
+                        <li class="small-info">Cisco Networking Academy</li>
+                        <li><br></li>
                         <li>Networking Essentials</li>
+                        <li class="small-info">Cisco Networking Academy</li>
                     </ul>
                 </td>
             </tr>
@@ -220,7 +234,7 @@
                 </td>
             </tr>
 
-            <tr>
+            <!-- <tr>
                 <th>Intereses</th>
             </tr>
             <tr>
@@ -231,7 +245,7 @@
                         <li>Procesamiento de señales</li>
                     </ul>
                 </td>
-            </tr>
+            </tr> -->
         </table>
 
         <br>
@@ -271,7 +285,7 @@
                             <tbody>
                                 <tr>
                                     <td>Inglés</td>
-                                    <td>Avanzado</td>
+                                    <td><a href="https://www.efset.org/cert/kgKFT5">Proficiente</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -295,13 +309,19 @@
                                 <tr>
                                     <td>HTML</td>
                                     <td>CSS</td>
-                                    <td>JS</td>
+                                    <td>Javascript</td>
                                     <td>GIT</td>
+                                </tr>
+                                <tr>
+                                    <td>SQL</td>
+                                    <td>Bootstrap</td>
+                                    <td>NodeJS</td>
+                                    <td class="hide"></td>
                                 </tr>
                                 <tr>
                                     <td>Linux</td>
                                     <td>Windows</td>
-                                    <td>MAC</td>
+                                    <td>MacOS</td>
                                     <td class="hide"></td>
                                 </tr>
                             </tbody>
